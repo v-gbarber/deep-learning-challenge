@@ -1,0 +1,31 @@
+Analysis:
+The goal is to predict which funding applicants will be successful or not.
+
+Data Preprocessing
+
+What variable(s) are the target(s) for your model? IS_SUCCESSFUL	
+What variable(s) are the features for your model? 
+APPLICATION_TYPE
+AFFILIATION
+CLASSIFICATION
+USE_CASE
+ORGANIZATION
+STATUS
+INCOME_AMT
+SPECIAL_CONSIDERATIONS
+ASK_AMT
+
+What variable(s) should be removed from the input data because they are neither targets nor features? 
+EIN and NAME are removed
+
+Compiling, Training, and Evaluating the Model
+
+How many neurons, layers, and activation functions did you select for your neural network model, and why?
+Hidden layers(2) with 80, 30 neurons split.
+The input (node) feature was 43, 80 was used for the first layer because it is close to double of the input_feature. 
+The hidden layer activation function of relu is used for the first model.
+The binary classifier model (binary classification between 0 and 1) has one as output and the output layer activation of sigmoid.
+Were you able to achieve the target model performance?
+Both models were under 75%.
+What steps did you take in your attempts to increase model performance?
+The keras model was used to help increase performance.
